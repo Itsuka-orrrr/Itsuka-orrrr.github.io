@@ -72,6 +72,12 @@ header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position: fixed;
+  top: 0;
+  
+  /* z-indexを10に指定してください */
+  z-index: 10;
 }
 
 .logo {
@@ -128,7 +134,7 @@ header {
 
 .lesson-icon p {
   position: absolute;
-  top: 90px;
+  top: 75px;
   width: 100%;
   color: white;
 }
@@ -163,21 +169,15 @@ header {
   box-shadow: none;
 }
 
-/* <footer>の中の<img>のCSSを指定してください */
-footer img{
+footer img {
   width: 125px;
 }
 
-
-/* <footer>の中の<p>のCSSを指定してください */
-footer p{
+footer p {
   color: #b3aeb5;
   font-size: 12px;
 }
 
-
-/* <footer>のCSSを指定してください */
-footer{
+footer {
   padding-top: 30px;
 }
-
